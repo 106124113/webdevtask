@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Titan's Circuit</title>
+</head>
+<body>
+    <h1>Titan's circuit</h1>
+    <div id="game">
+        <svg id="hexagon" width="900" height="900"></svg>
+        <div id="txt">
+            <div class="time">Total time: <span id="gametimer">200</span> s</div>
+            <div class="score">Red: <span id="redscore">0</span></div>
+            <div class="score">Blue: <span id="bluescore">0</span></div>
+            <div>Turn of player: <span id="display">Red</span></div>
+            <div class="time">Time duration: <span id="turntimer">20</span> s</div>
+            <div id="pr">
+                <button id="pause">Pause</button>
+                <button id="resume" disabled>Resume</button>
+            </div>
+            <button onclick="reset()" id="reset">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
